@@ -1,0 +1,17 @@
+{
+  "name": "Buffer",
+  "keywords": "buffer",
+  "description": "Character buffer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oddstr13"
+  },
+  "version": "0.0.1",
+  "authors": {
+    "name": "Odd Stråbø",
+    "url": "https://github.com/oddstr13"
+  },
+  "exclude": [],
+  "frameworks": "arduino",
+  "platforms": "*"
+}
