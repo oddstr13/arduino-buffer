@@ -38,7 +38,6 @@ class Buffer {
             add(value.c_str());
         }
 
-        String _floatbuf;
         void addNumber(double value, uint8_t precission=2, bool strip=true) {
             // TODO: replace most of this code with String(), but keep strip functionality
             _floatbuf = String(value, precission);
@@ -64,11 +63,11 @@ class Buffer {
         }
 
         void addNumber(unsigned long value, uint8_t base=DEC) {
-            add(String(value, base).c_str);
+            add(String(value, base).c_str());
         }
 
         void addNumber(long value, uint8_t base=DEC) {
-            add(String(value, base).c_str);
+            add(String(value, base).c_str());
         }
 
         void addNumber(char *value, uint8_t len) {
@@ -97,5 +96,5 @@ class Buffer {
         }
 
     private:
-        char _floatbuf[16] = "";
+        String _floatbuf;
 };
