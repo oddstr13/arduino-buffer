@@ -5,7 +5,7 @@
 #include <iso646.h>
 #include <Arduino.h>
 
-const char *BASE16 = "0123456789abcdef";
+extern const char *BASE16;
 
 //template<uint16_t SIZE>
 class Buffer {
