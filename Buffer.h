@@ -70,11 +70,11 @@ class Buffer {
             add(String(value, base).c_str());
         }
 
-        void addNumber(char *value, uint8_t len) {
+        void add(const char *value, uint16_t len) {
             // Add char array to the output data buffer (databuf) 
-            for (uint8_t i=0; i<len; i++) {
+            for (uint16_t i=0; i<len; i++) {
                 if (ptr < size) {
-                buf[ptr++] = value[i];
+                    buf[ptr++] = value[i];
                 }
             }
         }
