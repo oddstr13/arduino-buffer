@@ -1,3 +1,6 @@
+#ifndef Buffer_h
+#define Buffer_h
+
 #include <stdint.h>
 #include <iso646.h>
 #include <Arduino.h>
@@ -98,3 +101,5 @@ class Buffer {
     private:
         String _floatbuf;
 };
+
+#endif
